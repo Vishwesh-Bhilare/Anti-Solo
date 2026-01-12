@@ -1,34 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Events — teamsync</title>
-<link rel="stylesheet" href="styles.css">
+  <title>Events — teamsync</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
 <header>
-<strong>teamsync</strong>
-<nav>
-<a href="index.html">Home</a>
-<a href="events.html">Events</a>
-<a href="matches.html">Matches</a>
-<a href="dashboard.html">Dashboard</a>
-</nav>
+  <strong>teamsync</strong>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="matches.html">Matches</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
 </header>
 
-
 <main class="grid">
-<div class="card">
-<h3>ZeroToHack — College A</h3>
-<div class="slots">
-<div class="slot filled"></div><div class="slot filled"></div><div class="slot"></div><div class="slot"></div>
-</div>
-<div class="skills">
-<span class="skill">Backend</span>
-<span class="skill">UI</span>
-</div>
-<a href="team.html" class="btn outline">View team</a>
-</div>
+
+  <!-- Event card -->
+  <section class="card">
+    <h3>ZeroToHack — College A</h3>
+
+    <p class="muted">
+      Offline • Apr 3, 2026 • Team size 4
+    </p>
+
+    <!-- Team slots -->
+    <div class="slots" style="margin:10px 0">
+      <div class="slot filled"></div>
+      <div class="slot filled"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills">
+      <span class="skill">Backend</span>
+      <span class="skill">UI</span>
+      <span class="skill">ML</span>
+    </div>
+
+    <!-- Trust signal -->
+    <p class="muted" style="margin-top:10px">
+      Avg team credit: <strong>87</strong>
+    </p>
+
+    <div style="margin-top:12px">
+      <a href="team.html" class="btn outline">View team</a>
+    </div>
+  </section>
+
+  <!-- Event card -->
+  <section class="card">
+    <h3>OpenBuilds — Online</h3>
+
+    <p class="muted">
+      Online • May 1, 2026 • Team size 3
+    </p>
+
+    <div class="slots" style="margin:10px 0">
+      <div class="slot filled"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+    </div>
+
+    <div class="skills">
+      <span class="skill">Frontend</span>
+      <span class="skill">Product</span>
+    </div>
+
+    <p class="muted" style="margin-top:10px">
+      Avg team credit: <strong>74</strong>
+    </p>
+
+    <div style="margin-top:12px">
+      <a href="team.html" class="btn outline">View team</a>
+    </div>
+  </section>
+
 </main>
+
 <script src="app.js"></script>
 </body>
 </html>
