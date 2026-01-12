@@ -1,31 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Team — teamsync</title>
-<link rel="stylesheet" href="styles.css">
+  <title>Team — teamsync</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
 <header>
-<strong>teamsync</strong>
-<nav>
-<a href="index.html">Home</a>
-<a href="events.html">Events</a>
-<a href="matches.html">Matches</a>
-<a href="dashboard.html">Dashboard</a>
-</nav>
+  <strong>teamsync</strong>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="matches.html">Matches</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
 </header>
 
-
 <main>
-<div class="card">
-<h3>Team Alpha — ZeroToHack</h3>
-<div class="slots">
-<div class="slot filled"></div><div class="slot filled"></div><div class="slot"></div><div class="slot"></div>
-</div>
-<p class="muted">Missing: UI</p>
-<button class="btn" onclick="mockJoin('Team Alpha')">Join team</button>
-</div>
+
+  <section class="card" style="max-width:720px;margin:0 auto">
+    <h3>Team Alpha — ZeroToHack</h3>
+
+    <p class="muted">
+      Offline • Apr 3, 2026 • Team size 4
+    </p>
+
+    <!-- Team slots -->
+    <div class="slots" style="margin:12px 0">
+      <div class="slot filled"></div>
+      <div class="slot filled"></div>
+      <div class="slot"></div>
+      <div class="slot"></div>
+    </div>
+
+    <!-- Members -->
+    <div style="margin-top:14px">
+      <p class="muted">Current members</p>
+      <div class="skills">
+        <span class="skill">Backend • 90</span>
+        <span class="skill">ML • 82</span>
+      </div>
+    </div>
+
+    <!-- Missing skills -->
+    <div style="margin-top:14px">
+      <p class="muted">Missing skills</p>
+      <div class="skills">
+        <span class="skill">UI</span>
+        <span class="skill">Frontend</span>
+      </div>
+    </div>
+
+    <!-- Trust info -->
+    <div style="margin-top:14px">
+      <p class="muted">
+        Average team credit: <strong>88</strong>
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <div style="margin-top:20px;display:flex;justify-content:space-between;align-items:center">
+      <span class="muted">Slots available</span>
+      <button class="btn" data-join="Team Alpha">
+        Request to join
+      </button>
+    </div>
+
+  </section>
+
 </main>
+
 <script src="app.js"></script>
 </body>
 </html>
