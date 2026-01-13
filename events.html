@@ -18,68 +18,189 @@
   </nav>
 </header>
 
-<main class="grid">
+<main>
 
-  <!-- Event card -->
-  <section class="card">
-    <h3>ZeroToHack — College A</h3>
+  <div style="margin-bottom:24px">
+    <h2 style="margin:0 0 4px 0">Upcoming Events</h2>
+    <p class="muted" style="font-size:15px">Find teams looking for builders like you</p>
+  </div>
 
-    <p class="muted">
-      Offline • Apr 3, 2026 • Team size 4
-    </p>
-
-    <!-- Team slots -->
-    <div class="slots" style="margin:10px 0">
-      <div class="slot filled"></div>
-      <div class="slot filled"></div>
-      <div class="slot"></div>
-      <div class="slot"></div>
+  <!-- Filters -->
+  <div class="card" style="margin-bottom:24px">
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <div style="flex:1;min-width:200px">
+        <input type="text" placeholder="Search events..." style="width:100%;padding:10px 14px;background:rgba(0,0,0,0.4);border:1px solid #1E293B;border-radius:10px;color:#CBD5E1;font-size:14px" />
+      </div>
+      <select style="padding:10px 14px;background:rgba(0,0,0,0.4);border:1px solid #1E293B;border-radius:10px;color:#CBD5E1;font-size:14px;cursor:pointer">
+        <option>All locations</option>
+        <option>Online</option>
+        <option>Offline</option>
+      </select>
+      <select style="padding:10px 14px;background:rgba(0,0,0,0.4);border:1px solid #1E293B;border-radius:10px;color:#CBD5E1;font-size:14px;cursor:pointer">
+        <option>All dates</option>
+        <option>This week</option>
+        <option>This month</option>
+      </select>
     </div>
+  </div>
 
-    <!-- Skills -->
-    <div class="skills">
-      <span class="skill">Backend</span>
-      <span class="skill">UI</span>
-      <span class="skill">ML</span>
-    </div>
+  <div class="grid">
 
-    <!-- Trust signal -->
-    <p class="muted" style="margin-top:10px">
-      Avg team credit: <strong>87</strong>
-    </p>
+    <!-- Event card -->
+    <section class="card">
+      <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:12px">
+        <div>
+          <h3 style="margin:0 0 6px 0">ZeroToHack</h3>
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+            <span style="font-size:13px;color:#64748B">College A</span>
+            <span style="width:4px;height:4px;background:#64748B;border-radius:50%"></span>
+            <span style="font-size:13px;color:#64748B">Apr 3, 2026</span>
+          </div>
+        </div>
+        <div style="padding:6px 10px;background:rgba(167,139,250,0.15);border:1px solid rgba(167,139,250,0.3);border-radius:8px;font-size:11px;font-weight:600;color:#A78BFA">
+          OFFLINE
+        </div>
+      </div>
 
-    <div style="margin-top:12px">
-      <a href="team.html" class="btn outline">View team</a>
-    </div>
-  </section>
+      <!-- Team slots -->
+      <div style="margin:16px 0">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <span style="font-size:13px;color:#64748B">Team size: 4</span>
+          <span style="font-size:13px;font-weight:600;color:#34D399">2 spots left</span>
+        </div>
+        <div class="slots">
+          <div class="slot filled"></div>
+          <div class="slot filled"></div>
+          <div class="slot"></div>
+          <div class="slot"></div>
+        </div>
+      </div>
 
-  <!-- Event card -->
-  <section class="card">
-    <h3>OpenBuilds — Online</h3>
+      <!-- Skills -->
+      <div style="margin-bottom:16px">
+        <p style="font-size:13px;color:#64748B;margin-bottom:8px">Looking for</p>
+        <div class="skills">
+          <span class="skill">Backend</span>
+          <span class="skill">UI</span>
+          <span class="skill">ML</span>
+        </div>
+      </div>
 
-    <p class="muted">
-      Online • May 1, 2026 • Team size 3
-    </p>
+      <!-- Trust signal -->
+      <div style="padding:12px;background:rgba(34,211,238,0.08);border:1px solid rgba(34,211,238,0.2);border-radius:10px;margin-bottom:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span style="font-size:13px;color:#64748B">Avg team credit</span>
+          <span style="font-size:18px;font-weight:700;color:#22D3EE">87</span>
+        </div>
+      </div>
 
-    <div class="slots" style="margin:10px 0">
-      <div class="slot filled"></div>
-      <div class="slot"></div>
-      <div class="slot"></div>
-    </div>
+      <a href="team.html" class="btn outline" style="width:100%;text-align:center;display:block">
+        View team details
+      </a>
+    </section>
 
-    <div class="skills">
-      <span class="skill">Frontend</span>
-      <span class="skill">Product</span>
-    </div>
+    <!-- Event card -->
+    <section class="card">
+      <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:12px">
+        <div>
+          <h3 style="margin:0 0 6px 0">OpenBuilds</h3>
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+            <span style="font-size:13px;color:#64748B">Online</span>
+            <span style="width:4px;height:4px;background:#64748B;border-radius:50%"></span>
+            <span style="font-size:13px;color:#64748B">May 1, 2026</span>
+          </div>
+        </div>
+        <div style="padding:6px 10px;background:rgba(34,211,238,0.15);border:1px solid rgba(34,211,238,0.3);border-radius:8px;font-size:11px;font-weight:600;color:#22D3EE">
+          ONLINE
+        </div>
+      </div>
 
-    <p class="muted" style="margin-top:10px">
-      Avg team credit: <strong>74</strong>
-    </p>
+      <div style="margin:16px 0">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <span style="font-size:13px;color:#64748B">Team size: 3</span>
+          <span style="font-size:13px;font-weight:600;color:#FDE68A">2 spots left</span>
+        </div>
+        <div class="slots">
+          <div class="slot filled"></div>
+          <div class="slot"></div>
+          <div class="slot"></div>
+        </div>
+      </div>
 
-    <div style="margin-top:12px">
-      <a href="team.html" class="btn outline">View team</a>
-    </div>
-  </section>
+      <div style="margin-bottom:16px">
+        <p style="font-size:13px;color:#64748B;margin-bottom:8px">Looking for</p>
+        <div class="skills">
+          <span class="skill">Frontend</span>
+          <span class="skill">Product</span>
+        </div>
+      </div>
+
+      <div style="padding:12px;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.2);border-radius:10px;margin-bottom:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span style="font-size:13px;color:#64748B">Avg team credit</span>
+          <span style="font-size:18px;font-weight:700;color:#FDE68A">74</span>
+        </div>
+      </div>
+
+      <a href="team.html" class="btn outline" style="width:100%;text-align:center;display:block">
+        View team details
+      </a>
+    </section>
+
+    <!-- Event card - High priority -->
+    <section class="card" style="border:1px solid rgba(34,211,238,0.4)">
+      <div style="display:inline-block;padding:4px 8px;background:rgba(34,211,238,0.2);border:1px solid rgba(34,211,238,0.4);border-radius:6px;font-size:11px;font-weight:700;color:#22D3EE;margin-bottom:12px">
+        ⚡ HIGH MATCH
+      </div>
+      
+      <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:12px">
+        <div>
+          <h3 style="margin:0 0 6px 0">HackTheNorth</h3>
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+            <span style="font-size:13px;color:#64748B">Waterloo, CA</span>
+            <span style="width:4px;height:4px;background:#64748B;border-radius:50%"></span>
+            <span style="font-size:13px;color:#64748B">Jun 15, 2026</span>
+          </div>
+        </div>
+        <div style="padding:6px 10px;background:rgba(167,139,250,0.15);border:1px solid rgba(167,139,250,0.3);border-radius:8px;font-size:11px;font-weight:600;color:#A78BFA">
+          OFFLINE
+        </div>
+      </div>
+
+      <div style="margin:16px 0">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <span style="font-size:13px;color:#64748B">Team size: 4</span>
+          <span style="font-size:13px;font-weight:600;color:#34D399">1 spot left</span>
+        </div>
+        <div class="slots">
+          <div class="slot filled"></div>
+          <div class="slot filled"></div>
+          <div class="slot filled"></div>
+          <div class="slot"></div>
+        </div>
+      </div>
+
+      <div style="margin-bottom:16px">
+        <p style="font-size:13px;color:#64748B;margin-bottom:8px">Looking for</p>
+        <div class="skills">
+          <span class="skill active">Backend</span>
+        </div>
+      </div>
+
+      <div style="padding:12px;background:rgba(34,211,238,0.12);border:1px solid rgba(34,211,238,0.3);border-radius:10px;margin-bottom:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span style="font-size:13px;color:#64748B">Avg team credit</span>
+          <span style="font-size:18px;font-weight:700;color:#22D3EE">91</span>
+        </div>
+        <div style="font-size:12px;color:#22D3EE;margin-top:6px">🎯 Perfect skill match!</div>
+      </div>
+
+      <a href="team.html" class="btn" style="width:100%;text-align:center;display:block">
+        View team details
+      </a>
+    </section>
+
+  </div>
 
 </main>
 

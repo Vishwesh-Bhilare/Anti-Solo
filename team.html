@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Team — teamsync</title>
+  <title>Team Details — teamsync</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
@@ -20,55 +20,170 @@
 
 <main>
 
-  <section class="card" style="max-width:720px;margin:0 auto">
-    <h3>Team Alpha — ZeroToHack</h3>
+  <div style="max-width:900px;margin:0 auto">
+    
+    <!-- Back button -->
+    <a href="events.html" style="display:inline-flex;align-items:center;gap:6px;color:#64748B;font-size:14px;margin-bottom:20px;transition:color 0.2s" onmouseover="this.style.color='#22D3EE'" onmouseout="this.style.color='#64748B'">
+      ← Back to events
+    </a>
 
-    <p class="muted">
-      Offline • Apr 3, 2026 • Team size 4
-    </p>
-
-    <!-- Team slots -->
-    <div class="slots" style="margin:12px 0">
-      <div class="slot filled"></div>
-      <div class="slot filled"></div>
-      <div class="slot"></div>
-      <div class="slot"></div>
-    </div>
-
-    <!-- Members -->
-    <div style="margin-top:14px">
-      <p class="muted">Current members</p>
-      <div class="skills">
-        <span class="skill">Backend • 90</span>
-        <span class="skill">ML • 82</span>
+    <section class="card">
+      
+      <!-- Header -->
+      <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:24px;flex-wrap:wrap;gap:16px">
+        <div style="flex:1">
+          <div style="display:inline-block;padding:6px 12px;background:rgba(34,211,238,0.15);border:1px solid rgba(34,211,238,0.3);border-radius:8px;font-size:12px;font-weight:600;color:#22D3EE;margin-bottom:12px">
+            ⭐ 84% MATCH FOR YOU
+          </div>
+          <h2 style="margin:0 0 8px 0">Team Alpha</h2>
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+            <span style="color:#64748B;font-size:14px">ZeroToHack</span>
+            <span style="width:4px;height:4px;background:#64748B;border-radius:50%"></span>
+            <span style="color:#64748B;font-size:14px">College A, Offline</span>
+            <span style="width:4px;height:4px;background:#64748B;border-radius:50%"></span>
+            <span style="color:#64748B;font-size:14px">Apr 3, 2026</span>
+          </div>
+        </div>
+        <div style="padding:12px 16px;background:linear-gradient(135deg, rgba(34,211,238,0.15), rgba(167,139,250,0.15));border:1px solid rgba(34,211,238,0.3);border-radius:12px;text-align:center">
+          <div style="font-size:28px;font-weight:800;background:linear-gradient(135deg, #22D3EE, #A78BFA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">88</div>
+          <div style="font-size:11px;color:#64748B;font-weight:600;margin-top:2px">TEAM CREDIT</div>
+        </div>
       </div>
-    </div>
 
-    <!-- Missing skills -->
-    <div style="margin-top:14px">
-      <p class="muted">Missing skills</p>
-      <div class="skills">
-        <span class="skill">UI</span>
-        <span class="skill">Frontend</span>
+      <!-- Team slots with visual indicator -->
+      <div style="margin-bottom:28px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <span style="font-weight:600;color:#E2E8F0">Team composition</span>
+          <span style="font-size:13px;color:#34D399;font-weight:600">✓ 2 spots available</span>
+        </div>
+        <div style="display:flex;gap:10px">
+          <div class="slot filled"></div>
+          <div class="slot filled"></div>
+          <div class="slot"></div>
+          <div class="slot"></div>
+        </div>
       </div>
-    </div>
 
-    <!-- Trust info -->
-    <div style="margin-top:14px">
-      <p class="muted">
-        Average team credit: <strong>88</strong>
-      </p>
-    </div>
+      <!-- Grid layout for team info -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px">
+        
+        <!-- Current members -->
+        <div style="padding:20px;background:rgba(0,0,0,0.3);border-radius:12px;border:1px solid #1E293B">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
+            <div style="width:32px;height:32px;background:rgba(34,211,238,0.15);border:1px solid rgba(34,211,238,0.3);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px">
+              👥
+            </div>
+            <h3 style="margin:0">Current Members</h3>
+          </div>
+          
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px;background:rgba(0,0,0,0.4);border-radius:8px">
+              <div>
+                <div style="font-size:14px;font-weight:600;color:#E2E8F0">Backend Dev</div>
+                <div style="font-size:12px;color:#64748B;margin-top:2px">3 yrs experience</div>
+              </div>
+              <div style="font-size:16px;font-weight:700;color:#22D3EE">90</div>
+            </div>
+            
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px;background:rgba(0,0,0,0.4);border-radius:8px">
+              <div>
+                <div style="font-size:14px;font-weight:600;color:#E2E8F0">ML Engineer</div>
+                <div style="font-size:12px;color:#64748B;margin-top:2px">2 yrs experience</div>
+              </div>
+              <div style="font-size:16px;font-weight:700;color:#A78BFA">82</div>
+            </div>
+          </div>
+        </div>
 
-    <!-- CTA -->
-    <div style="margin-top:20px;display:flex;justify-content:space-between;align-items:center">
-      <span class="muted">Slots available</span>
-      <button class="btn" data-join="Team Alpha">
-        Request to join
-      </button>
-    </div>
+        <!-- Missing skills -->
+        <div style="padding:20px;background:rgba(0,0,0,0.3);border-radius:12px;border:1px solid #1E293B">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
+            <div style="width:32px;height:32px;background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.3);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px">
+              🎯
+            </div>
+            <h3 style="margin:0">Looking For</h3>
+          </div>
+          
+          <div class="skills" style="margin-bottom:12px">
+            <span class="skill" style="background:rgba(34,211,238,0.12);border-color:rgba(34,211,238,0.4);color:#22D3EE">UI Design</span>
+            <span class="skill" style="background:rgba(34,211,238,0.12);border-color:rgba(34,211,238,0.4);color:#22D3EE">Frontend</span>
+          </div>
+          
+          <p style="font-size:13px;color:#64748B;margin:0;line-height:1.5">
+            Team needs design and frontend expertise to complete the stack
+          </p>
+        </div>
 
-  </section>
+      </div>
+
+      <!-- Team goals & vibe -->
+      <div style="padding:20px;background:linear-gradient(135deg, rgba(167,139,250,0.08), rgba(34,211,238,0.08));border:1px solid rgba(167,139,250,0.2);border-radius:12px;margin-bottom:28px">
+        <h3 style="margin:0 0 12px 0">Team Goal & Vibe</h3>
+        <p style="font-size:14px;color:#CBD5E1;line-height:1.6;margin:0 0 12px 0">
+          We're building a healthcare platform to help patients track medications. 
+          Looking for committed builders who want to win and create real impact.
+        </p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <span style="padding:6px 12px;background:rgba(52,211,153,0.15);border:1px solid rgba(52,211,153,0.3);border-radius:8px;font-size:12px;font-weight:600;color:#34D399">
+            🏆 Aiming to win
+          </span>
+          <span style="padding:6px 12px;background:rgba(34,211,238,0.15);border:1px solid rgba(34,211,238,0.3);border-radius:8px;font-size:12px;font-weight:600;color:#22D3EE">
+            💼 Serious builders
+          </span>
+          <span style="padding:6px 12px;background:rgba(167,139,250,0.15);border:1px solid rgba(167,139,250,0.3);border-radius:8px;font-size:12px;font-weight:600;color:#A78BFA">
+            🤝 Collaborative
+          </span>
+        </div>
+      </div>
+
+      <!-- Trust metrics -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:28px">
+        <div style="padding:16px;background:rgba(0,0,0,0.3);border-radius:12px;border:1px solid #1E293B;text-align:center">
+          <div style="font-size:24px;margin-bottom:4px">🎯</div>
+          <div style="font-size:24px;font-weight:700;color:#34D399">100%</div>
+          <div style="font-size:12px;color:#64748B;margin-top:4px">Show up rate</div>
+        </div>
+        
+        <div style="padding:16px;background:rgba(0,0,0,0.3);border-radius:12px;border:1px solid #1E293B;text-align:center">
+          <div style="font-size:24px;margin-bottom:4px">⭐</div>
+          <div style="font-size:24px;font-weight:700;color:#22D3EE">4.8/5</div>
+          <div style="font-size:12px;color:#64748B;margin-top:4px">Team rating</div>
+        </div>
+        
+        <div style="padding:16px;background:rgba(0,0,0,0.3);border-radius:12px;border:1px solid #1E293B;text-align:center">
+          <div style="font-size:24px;margin-bottom:4px">🏆</div>
+          <div style="font-size:24px;font-weight:700;color:#A78BFA">2</div>
+          <div style="font-size:12px;color:#64748B;margin-top:4px">Past wins</div>
+        </div>
+      </div>
+
+      <!-- Why you're a good match -->
+      <div style="padding:20px;background:linear-gradient(135deg, rgba(34,211,238,0.1), rgba(52,211,153,0.1));border:1px solid rgba(34,211,238,0.3);border-radius:12px;margin-bottom:28px">
+        <h3 style="margin:0 0 12px 0;display:flex;align-items:center;gap:8px">
+          ✨ Why you're a great match
+        </h3>
+        <ul style="margin:0;padding-left:20px;color:#CBD5E1;font-size:14px;line-height:1.8">
+          <li>Your Backend skills perfectly fill their gap</li>
+          <li>High compatibility score (84%) based on working style</li>
+          <li>Team's high credit (88) matches your trust level (85)</li>
+          <li>Shared goal: building to win</li>
+        </ul>
+      </div>
+
+      <!-- CTA -->
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:24px;border-top:1px solid #1E293B;flex-wrap:wrap">
+        <div>
+          <div style="font-weight:600;color:#E2E8F0;margin-bottom:4px">Ready to join?</div>
+          <div style="font-size:13px;color:#64748B">Team will review your request within 24 hours</div>
+        </div>
+        <button class="btn" data-join="Team Alpha" style="font-size:16px;padding:14px 32px">
+          Request to join →
+        </button>
+      </div>
+
+    </section>
+
+  </div>
 
 </main>
 

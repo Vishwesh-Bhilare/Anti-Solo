@@ -18,43 +18,152 @@
   </nav>
 </header>
 
-<main class="grid grid-2">
+<main>
 
-  <!-- Profile / Trust card -->
-  <section class="card">
-    <h3>Your Profile</h3>
+  <div style="margin-bottom:24px">
+    <h2 style="margin:0 0 4px 0">Welcome back, Vishwesh 👋</h2>
+    <p class="muted" style="font-size:15px">Here's what's happening with your teams</p>
+  </div>
 
-    <div class="credit">
-      Social Credit:
-      <span>85</span>
+  <div class="grid grid-2">
+
+    <!-- Profile / Trust card -->
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <section class="card">
+        <h3 style="margin-bottom:16px">Your Profile</h3>
+
+        <div class="credit">
+          <div>
+            <div style="font-size:13px;color:#64748B;margin-bottom:4px">Social Credit</div>
+            <span>85</span>
+          </div>
+        </div>
+
+        <div style="margin-top:16px">
+          <span class="badge good">🟢 Trusted Builder</span>
+        </div>
+
+        <p class="muted" style="margin-top:12px;line-height:1.5">
+          High reliability score. Teams see you as a low ghosting risk and a committed builder.
+        </p>
+
+        <div style="margin-top:16px;padding-top:16px;border-top:1px solid #1E293B">
+          <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+            <span style="font-size:13px;color:#64748B">Profile completion</span>
+            <span style="font-size:13px;font-weight:600;color:#22D3EE">85%</span>
+          </div>
+          <div style="height:6px;background:#020617;border-radius:999px;overflow:hidden">
+            <div style="width:85%;height:100%;background:linear-gradient(90deg, #22D3EE, #38BDF8);border-radius:999px"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick stats -->
+      <section class="card">
+        <h3 style="margin-bottom:16px">Quick Stats</h3>
+        
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div style="padding:12px;background:rgba(0,0,0,0.3);border-radius:10px;border:1px solid #1E293B">
+            <div style="font-size:24px;font-weight:700;color:#22D3EE">12</div>
+            <div style="font-size:12px;color:#64748B;margin-top:4px">Events joined</div>
+          </div>
+          <div style="padding:12px;background:rgba(0,0,0,0.3);border-radius:10px;border:1px solid #1E293B">
+            <div style="font-size:24px;font-weight:700;color:#A78BFA">8</div>
+            <div style="font-size:12px;color:#64748B;margin-top:4px">Teams formed</div>
+          </div>
+          <div style="padding:12px;background:rgba(0,0,0,0.3);border-radius:10px;border:1px solid #1E293B">
+            <div style="font-size:24px;font-weight:700;color:#34D399">3</div>
+            <div style="font-size:12px;color:#64748B;margin-top:4px">Wins</div>
+          </div>
+          <div style="padding:12px;background:rgba(0,0,0,0.3);border-radius:10px;border:1px solid #1E293B">
+            <div style="font-size:24px;font-weight:700;color:#FDE68A">92%</div>
+            <div style="font-size:12px;color:#64748B;margin-top:4px">Show up rate</div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div style="margin-top:10px">
-      <span class="badge good">🟢 Trusted Builder</span>
+    <!-- Main content area -->
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <!-- Upcoming Events -->
+      <section class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+          <h3 style="margin:0">Upcoming Events</h3>
+          <a href="events.html" style="font-size:13px;color:#22D3EE;font-weight:600">View all →</a>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="padding:14px;background:rgba(0,0,0,0.3);border-radius:12px;border:1px solid #1E293B;transition:all 0.2s">
+            <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px">
+              <div>
+                <div style="font-weight:600;color:#E2E8F0;margin-bottom:4px">ZeroToHack</div>
+                <div style="font-size:13px;color:#64748B">College A • Offline</div>
+              </div>
+              <div style="padding:4px 8px;background:rgba(34,211,238,0.15);border:1px solid rgba(34,211,238,0.3);border-radius:6px;font-size:11px;font-weight:600;color:#22D3EE">
+                Apr 3
+              </div>
+            </div>
+            <div style="display:flex;gap:6px;margin-top:10px">
+              <div class="slot filled"></div>
+              <div class="slot filled"></div>
+              <div class="slot"></div>
+              <div class="slot"></div>
+            </div>
+          </div>
+
+          <div style="padding:14px;background:rgba(0,0,0,0.3);border-radius:12px;border:1px solid #1E293B">
+            <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px">
+              <div>
+                <div style="font-weight:600;color:#E2E8F0;margin-bottom:4px">OpenBuilds</div>
+                <div style="font-size:13px;color:#64748B">Online</div>
+              </div>
+              <div style="padding:4px 8px;background:rgba(167,139,250,0.15);border:1px solid rgba(167,139,250,0.3);border-radius:6px;font-size:11px;font-weight:600;color:#A78BFA">
+                May 1
+              </div>
+            </div>
+            <div style="display:flex;gap:6px;margin-top:10px">
+              <div class="slot filled"></div>
+              <div class="slot"></div>
+              <div class="slot"></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px">
+          <a href="events.html" class="btn outline" style="width:100%;text-align:center;display:block">
+            Browse all events
+          </a>
+        </div>
+      </section>
+
+      <!-- Recent matches -->
+      <section class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+          <h3 style="margin:0">Recent Matches</h3>
+          <a href="matches.html" style="font-size:13px;color:#22D3EE;font-weight:600">View all →</a>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="padding:12px;background:rgba(0,0,0,0.3);border-radius:10px;border:1px solid #1E293B;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:600;color:#E2E8F0;font-size:14px">Team Alpha</div>
+              <div style="font-size:12px;color:#64748B;margin-top:2px">84% compatibility</div>
+            </div>
+            <span style="font-size:20px;font-weight:700;color:#34D399">84%</span>
+          </div>
+
+          <div style="padding:12px;background:rgba(0,0,0,0.3);border-radius:10px;border:1px solid #1E293B;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:600;color:#E2E8F0;font-size:14px">Team Beta</div>
+              <div style="font-size:12px;color:#64748B;margin-top:2px">72% compatibility</div>
+            </div>
+            <span style="font-size:20px;font-weight:700;color:#FDE68A">72%</span>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <p class="muted" style="margin-top:10px">
-      High reliability. Teams see you as a low ghosting risk.
-    </p>
-  </section>
-
-  <!-- Activity / Events -->
-  <section class="card">
-    <h3>Upcoming Events</h3>
-
-    <div style="margin-top:10px">
-      <p class="muted">
-        <strong>ZeroToHack</strong> — College A
-      </p>
-      <p class="muted">
-        <strong>OpenBuilds</strong> — Online
-      </p>
-    </div>
-
-    <div style="margin-top:14px">
-      <a href="events.html" class="btn outline">Browse events</a>
-    </div>
-  </section>
+  </div>
 
 </main>
 

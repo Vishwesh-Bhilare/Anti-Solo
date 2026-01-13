@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Onboarding — teamsync</title>
+  <title>Get Started — teamsync</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
@@ -14,52 +14,128 @@
 
 <main>
 
-  <section class="card" style="max-width:520px;margin:0 auto">
-    <h3>Set up your profile</h3>
-    <p class="muted">
-      This helps teams judge compatibility and reliability.
-    </p>
-
-    <!-- Skills -->
-    <div style="margin-top:16px">
-      <p class="muted">Your skills</p>
-      <div class="skills">
-        <span class="skill">Backend</span>
-        <span class="skill">Frontend</span>
-        <span class="skill">Design</span>
-        <span class="skill">ML</span>
+  <section class="card" style="max-width:640px;margin:0 auto">
+    
+    <!-- Progress indicator -->
+    <div style="margin-bottom:32px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <span style="font-size:13px;color:#64748B;font-weight:600">Setup Progress</span>
+        <span style="font-size:13px;font-weight:600;color:#22D3EE">3 of 4 steps</span>
+      </div>
+      <div style="height:6px;background:#020617;border-radius:999px;overflow:hidden">
+        <div style="width:75%;height:100%;background:linear-gradient(90deg, #22D3EE, #38BDF8);border-radius:999px;transition:width 0.3s"></div>
       </div>
     </div>
 
+    <h2 style="margin:0 0 8px 0">Set up your profile</h2>
+    <p class="muted" style="margin:0 0 32px 0;font-size:15px;line-height:1.5">
+      Help teams understand your skills and reliability. This takes about 60 seconds.
+    </p>
+
+    <!-- Skills -->
+    <div style="margin-bottom:28px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <label style="font-weight:600;color:#E2E8F0;font-size:15px">Your skills</label>
+        <span style="font-size:12px;color:#64748B">Select all that apply</span>
+      </div>
+      <div class="skills">
+        <span class="skill active">Backend</span>
+        <span class="skill">Frontend</span>
+        <span class="skill active">Design</span>
+        <span class="skill">ML</span>
+        <span class="skill">DevOps</span>
+        <span class="skill">Mobile</span>
+        <span class="skill">Product</span>
+        <span class="skill">Data Science</span>
+      </div>
+      <p style="font-size:12px;color:#64748B;margin-top:8px">💡 Tip: Click skills to toggle selection</p>
+    </div>
+
     <!-- Availability -->
-    <div style="margin-top:16px">
-      <p class="muted">Availability (hours per day)</p>
+    <div style="margin-bottom:28px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <label style="font-weight:600;color:#E2E8F0;font-size:15px">Daily availability</label>
+        <span style="padding:4px 10px;background:rgba(34,211,238,0.15);border:1px solid rgba(34,211,238,0.3);border-radius:6px;font-size:13px;font-weight:600;color:#22D3EE">6 hours/day</span>
+      </div>
       <input
         type="range"
         min="1"
         max="12"
         value="6"
         style="width:100%"
+        oninput="this.previousElementSibling.querySelector('span:last-child').textContent = this.value + ' hours/day'"
       />
-      <p class="muted" style="margin-top:6px">
-        Higher availability improves trust perception.
-      </p>
+      <div style="display:flex;justify-content:space-between;margin-top:8px">
+        <span style="font-size:12px;color:#64748B">1hr</span>
+        <span style="font-size:12px;color:#64748B">12hrs</span>
+      </div>
+      <div style="margin-top:12px;padding:12px;background:rgba(167,139,250,0.08);border:1px solid rgba(167,139,250,0.2);border-radius:10px">
+        <p style="font-size:13px;color:#A78BFA;margin:0;line-height:1.5">
+          💡 Higher availability improves your trust score and match quality
+        </p>
+      </div>
     </div>
 
     <!-- Goal -->
-    <div style="margin-top:16px">
-      <p class="muted">Hackathon goal</p>
+    <div style="margin-bottom:32px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <label style="font-weight:600;color:#E2E8F0;font-size:15px">Hackathon goal</label>
+        <span style="font-size:12px;color:#64748B">What drives you?</span>
+      </div>
       <div class="skills">
         <span class="skill">Build MVP</span>
-        <span class="skill">Win</span>
+        <span class="skill active">Win</span>
         <span class="skill">Learn</span>
+        <span class="skill">Network</span>
+        <span class="skill">Experiment</span>
+      </div>
+    </div>
+
+    <!-- Experience level -->
+    <div style="margin-bottom:32px">
+      <label style="font-weight:600;color:#E2E8F0;font-size:15px;display:block;margin-bottom:12px">Experience level</label>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="padding:14px;background:rgba(0,0,0,0.3);border:1px solid #1E293B;border-radius:12px;cursor:pointer;transition:all 0.2s" onclick="this.style.background='rgba(34,211,238,0.1)';this.style.borderColor='rgba(34,211,238,0.4)'">
+          <div style="font-weight:600;color:#E2E8F0;margin-bottom:4px">Beginner</div>
+          <div style="font-size:12px;color:#64748B">0-2 hackathons</div>
+        </div>
+        <div style="padding:14px;background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.4);border-radius:12px;cursor:pointer;transition:all 0.2s">
+          <div style="font-weight:600;color:#E2E8F0;margin-bottom:4px">Intermediate</div>
+          <div style="font-size:12px;color:#64748B">3-5 hackathons</div>
+        </div>
+        <div style="padding:14px;background:rgba(0,0,0,0.3);border:1px solid #1E293B;border-radius:12px;cursor:pointer;transition:all 0.2s" onclick="this.style.background='rgba(34,211,238,0.1)';this.style.borderColor='rgba(34,211,238,0.4)'">
+          <div style="font-weight:600;color:#E2E8F0;margin-bottom:4px">Advanced</div>
+          <div style="font-size:12px;color:#64748B">6-10 hackathons</div>
+        </div>
+        <div style="padding:14px;background:rgba(0,0,0,0.3);border:1px solid #1E293B;border-radius:12px;cursor:pointer;transition:all 0.2s" onclick="this.style.background='rgba(34,211,238,0.1)';this.style.borderColor='rgba(34,211,238,0.4)'">
+          <div style="font-weight:600;color:#E2E8F0;margin-bottom:4px">Expert</div>
+          <div style="font-size:12px;color:#64748B">10+ hackathons</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust commitment -->
+    <div style="margin-bottom:32px;padding:16px;background:linear-gradient(135deg, rgba(52,211,153,0.08), rgba(34,211,238,0.08));border:1px solid rgba(52,211,153,0.3);border-radius:12px">
+      <div style="display:flex;gap:12px;align-items:start">
+        <div style="font-size:24px">🤝</div>
+        <div>
+          <div style="font-weight:600;color:#E2E8F0;margin-bottom:6px">Build your reputation</div>
+          <p style="font-size:13px;color:#94A3B8;margin:0;line-height:1.5">
+            Complete your first hackathon to start building social credit. Show up, contribute, and watch your trust score grow.
+          </p>
+        </div>
       </div>
     </div>
 
     <!-- CTA -->
-    <div style="margin-top:20px;display:flex;justify-content:space-between;align-items:center">
-      <span class="muted">~60 seconds to complete</span>
-      <a href="dashboard.html" class="btn">Finish setup</a>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:24px;border-top:1px solid #1E293B">
+      <div>
+        <div style="font-size:13px;color:#64748B">Almost there!</div>
+        <div style="font-size:12px;color:#64748B">~15 seconds left</div>
+      </div>
+      <a href="dashboard.html" class="btn" style="font-size:15px;padding:14px 32px">
+        Finish setup →
+      </a>
     </div>
 
   </section>
